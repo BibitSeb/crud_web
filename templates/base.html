@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            background-color: antiquewhite;
+        }
+        button {
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 20px;
+            color:white;
+            border: none;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            background-color:rgb(199, 114, 171);
+        }
+        button:hover {
+            background-color:rgb(212, 160, 195);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Database</h1>
+    <div>
+        <a href="/view">
+            <button>View Records</button>
+        </a>
+    </div>
+    <div>
+        <a href="/add">
+            <button>Insert Record</button>
+        </a>
+    </div>
+    <div>
+        <a href="/delete">
+            <button>Delete Record</button>
+        </a>
+    </div>
+    <div>
+        <a href="/update">
+            <button>Update Record</button>
+        </a>
+    </div>
+</body>
+</html>

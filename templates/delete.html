@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            delete
+        </title>
+        <link rel="stylesheet" href="{{url_for("static",filename="styles.css")}}">
+    </head>
+    <body>
+        <h3>Delete a student</h3>
+        <form method="post" action="\delete">
+            <label>Enter the id :</label>
+            <input type="text" name="id" min="1"/><br/><br/>
+            <input type="submit" value="Delete" id="btn"/>
+        </form>      
+
+        <a href="/">
+            <button>HOME</button>
+        </a>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        
+    </body>
+</html>

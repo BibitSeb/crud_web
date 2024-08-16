@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for("static",filename="styles.css")}}">
+    <title>My App</title>
+</head>
+<body>
+    
+    <h3>Add a student</h3>
+    <form action="/add" method="post">
+        <label>Id :</label>
+        <input type="text" name="id" min="1" required/><br/><br/>
+        <label>Name :</label>
+        <input type="text" name="nam" required/><br/><br/>
+        <label>Age :</label>
+        <input type="text" name="age" min="0" required/><br/><br/>
+        <input type="submit" value="ADD" id="btn"/>
+    </form>
+
+    <a href="/">
+        <button>HOME</button>
+    </a>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}    
+    
+
+   
+</body>
+</html>

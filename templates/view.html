@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>View page</title>
+        <link rel="stylesheet" href="{{url_for("static",filename="styles.css")}}">
+    </head>
+    <body>
+        <h3>The list of students</h3>
+        <table border="1">
+            <tr><th>ID</th><th>NAME</th><th>AGE</th></tr>
+            {% for item in values %}
+               <tr><td>{{item.id}} </td><td>{{item.name}}</td><td>{{item.age}}</td></tr>
+            {% endfor %} 
+        </table>
+        <br/>
+        <a href="/">
+            <button>HOME</button>
+        </a>
+    </body>
+</html>
