@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 30px;
+            margin: 20px;
+            background-color: antiquewhite;
+}
+
+table {
+    width: 30%;
+    margin: 0 auto;
+    border-color: black;
+}
+
+input[type="submit"]#btn
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(199, 114, 171);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="submit"]#btn:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+td {
+    padding: 10px;
+    text-align: left;
+    border-color: black;
+}
+form {
+    align-items: center;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(199, 114, 171);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
